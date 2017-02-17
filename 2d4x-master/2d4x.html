@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<script type='text/javascript' src='https://raw.github.com/jonassode/javascript-matrix/master/releases/jsmatrix_003.js' ></script>
+		<script type='text/javascript' src='https://raw.github.com/jonassode/javascript-lineofsight/master/releases/jslos_003.js' ></script>
+		<script type='text/javascript' src='nodes.js' ></script> 
+		<script type='text/javascript' src='2d4x.js' ></script> 
+		<script type='text/javascript' src='player.js' ></script> 
+		<script type='text/javascript' src='draw.js' ></script> 
+		<script type='text/javascript' src='generate.js' ></script> 
+		<script type='text/javascript' src='utils.js' ></script> 
+
+	</head>
+	<body>
+		<font face="Monospace">
+		<table style="border:2px silver solid;">
+			<tr>
+				<td colspan="2">
+					<div id="map_area" >&nbsp;</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%" valign="top">
+					<b>Tile information</b><br>
+					<div id="tile_area" >&nbsp;</div>
+				</td>
+				<td width="50%" valign="top">
+					<div id="unit_area" >&nbsp;</div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="50%" valign="top">
+					<b>Player list:</b></br>
+					<div id="player_area" >&nbsp;</div>
+				</td>
+				<td width="50%" valign="top">
+					<button onclick='end_turn();'>End Turn</button>&nbsp;
+					<button onclick='FOW ? FOW = false:FOW = true; draw.screen();'>Fog of War</button>&nbsp;<br>
+					<div id="log_area" >&nbsp;</div>
+				</td>
+			</tr>
+		</table>
+
+		<script>
+
+		var width = getIntOrDefault("width", 50);
+		var height = getIntOrDefault("height", 20);
+		var start_level = getIntOrDefault("land", 5);
+		var water_level = getIntOrDefault("water", 4);
+
+		generate.set_start_level(start_level);
+		generate.set_water_level(water_level);
+
+	 	var world = generate.world(height, width);
+		var LOG = "";
+		var FOW = getBooleanOrDefault("FOW", true);
+
+		player.add(getStringOrDefault('player1','mr player 1'));
+		player.add(getStringOrDefault('player2','mr player 2'));
+
+		player.get(0).add_unit(world, nodes.settler(), height - start_level - 1, 0);
+		player.get(1).add_unit(world, nodes.settler(), height - start_level - 1, width-1);
+
+		draw.screen();
+
+		</script>
+	</body>
+<html>
+

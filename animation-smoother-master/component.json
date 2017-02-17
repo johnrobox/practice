@@ -1,0 +1,21 @@
+{
+  "name" : "animation-smoother",
+  "repo" : "bestander/animation-smoother",
+  "description" : "Based on Tween.js library and contains utility methods for interpolating game object positions",
+  "version" : "1.0.1",
+  "keywords" : [
+    "tween",
+    "animation",
+    "interpolation"
+  ],
+  "dependencies" : {
+    "bestander/tween.js": "7.0.0"
+  },
+  "development": {
+    "bestander/jasmine": "*"
+  },
+  "main" : "index.js",
+  "scripts" : [
+    "index.js"
+  ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <body>
+        <div ng-app="" class="container" ng-init="label1 = 'First Number'; label2 = 'Last Number';  row1 = 'Addition'; row2 = 'Subtraction'; row3 = 'Multiplication'; row4 = 'Division'">
+             
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="firstNumber" ng-bind="label1"></label>
+                        <input type="number" id="firstNumber" ng-model="firstNumber" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="lastNumber" ng-bind="label2"></label>
+                        <input type="number" id="lastNumber" ng-model="secondNumber" class="form-control">
+                    </div>
+                </div>
+            </div>
+            
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td ng-bind="row1"></td>
+                    <td>{{ firstNumber }} + {{ secondNumber }}</td>
+                    <td ng-bind="firstNumber + secondNumber"></td>
+                </tr>
+                <tr>
+                    <td ng-bind="row2"></td>
+                    <td>{{ firstNumber}} - {{ secondNumber }}</td>
+                    <td ng-bind="firstNumber - secondNumber"></td>
+                </tr>
+                <tr>
+                    <td ng-bind="row3"></td>
+                    <td>{{ firstNumber }} * {{ secondNumber }}</td>
+                    <td ng-bind="firstNumber * secondNumber"></td>
+                </tr>
+                <tr>
+                    <td ng-bind="row4"></td>
+                    <td>{{ firstNumber }} / {{ secondNumber }}</td>
+                    <td ng-bind="firstNumber / secondNumber"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

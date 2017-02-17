@@ -1,0 +1,5 @@
+--compilers coffee:coffee-script
+--reporter spec
+--recursive
+--require test/testHelper.js
+--timeout 500

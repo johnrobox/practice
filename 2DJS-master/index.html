@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>2D JS Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<style>
+		body {
+			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+		}
+	</style>
+	<link href="resources/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+
+  	<div class="container">
+
+  		<div class="row game-world">
+  			
+  		</div>
+
+  		<div class="row" style="padding-top:10px;">
+  			<div class="span6 offset3 game-buttons">
+  				<div class="btn btn-primary" style="width:100%;">START</div>
+  				<div class="partial"></div>
+  			</div>
+  		</div>
+
+  		<div class="row instructions" style="padding-top:10px;">
+  		<div class="span6 offset3">
+  				<h2>How to Play</h2>
+  				<table class="table">
+  					<thead>
+  						<tr>
+  							<th>Buttons</th>
+  							<th>Action</th>
+  						</tr>
+  					</thead>
+  					<tbody>
+  						<tr>
+  							<td>Arrows</td>
+  							<td>Move Character</td>
+  						</tr>
+  						<tr>
+  							<td>Z</td>
+  							<td>Jump</td>
+  						</tr>
+  						<tr>
+  							<td>X</td>
+  							<td>Shoot</td>
+  						</tr>
+  					</tbody>
+  				</table>
+  			</div>
+  		</div>
+
+  	</div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="resources/js/jquery-1.10.2.min.js"></script>
+    <script src="resources/threeJS/three.js"></script>
+
+    <script type="text/javascript">
+
+      /*Global Variables*/
+      var WIDTH = 1200, HEIGHT = 450;
+
+      var VIEW_ANGLE = 45;
+      var ASPECT = WIDTH / HEIGHT;
+      var NEAR = 0.1;
+      var FAR = 20000;
+
+      var camera;
+      var scene;
+      var renderer;
+
+      init();
+      render();
+
+      function init()
+      {
+        //create Perspective Camera
+        camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR );
+        //camera initialized to (0,0,0) so move camera back
+        camera.position.z = 500;
+
+        //create Scene
+        scene = new THREE.Scene();
+
+        //add camera to scene
+        scene.add(camera);
+
+        //create renderer
+        renderer = new THREE.WebGLRenderer();
+
+        //set renderer parameters
+        renderer.setSize( WIDTH, HEIGHT );
+        renderer.setClearColor(0x151B54, 1);
+
+        //create DOM element to contain renderer
+        var container = $('.game-world');
+        //add renderer to container
+        container.append(renderer.domElement);
+
+        //create platforms
+        var geometry = new THREE.CubeGeometry(20,5,1);
+      }
+
+      function render()
+      {
+        renderer.render(scene, camera);
+      }
+
+    </script>
+
+</body>
+</html>

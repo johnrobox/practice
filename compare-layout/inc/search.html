@@ -1,0 +1,189 @@
+<div class="wrap">
+	<section class="section--search_area">
+		<div class="search_area_wrap">
+			<div class="search_area">
+				<table class="search_area_table">
+					<tbody>
+						<tr>
+							<td><input type="text" value="" class="input_keyword" name="" id="" placeholder="講師の名前やフリーワードを入力"></td>
+							<td><div class="select">
+									<select id="select_scholl">
+										<option>所属スクールを選択</option>
+										<option>●●英会話スクール</option>
+										<option>●●英会話スクール</option>
+										<option>●●英会話スクール</option>
+										<option>●●英会話スクール</option>
+										<option>●●英会話スクール</option>
+									</select>
+								</div></td>
+							<td><div class="search_btn"><i class="fa fa-search"></i></div></td>
+							<td><span class="text_search"><a class="detail" href="#" id="searchbox_button">絞込み検索 ▼</a></span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section class="section--search_check" >
+		<div class="search_check_wrap" id="searchbox">
+			<div class="search_check_inner">
+				<form id="select_all">
+					<dl class="select_area_top">
+						<dt class="h_place">居住地/出身国</dt>
+						<dd class="place">
+							<select id="select_place" class="select">
+								<option value="">フィリピン</option>
+								<option value="1">アメリカ</option>
+								<option value="2">カナダ</option>
+								<option value="3">その他</option>
+							</select>
+						</dd>
+						<dt class="h_sex"> 性別</dt>
+						<dd class="sex">
+							<select id="select_sex" class="select">
+								<option value="">女性</option>
+								<option value="1">男性</option>
+							</select>
+						</dd>
+						<dt class="h_age">年齢</dt>
+						<dd class="age">
+							<select id="select_age" class="select">
+								<option value="">すべて</option>
+								<option value="1">10代</option>
+								<option value="2">20代</option>
+								<option value="3">30代</option>
+								<option value="4">40代</option>
+								<option value="5">50代</option>
+							</select>
+						</dd>
+					</dl>
+					<dl class="select_area_second">
+						<dt class="h_japanese"> 日本語対応</dt>
+						<dd class="japanese">
+							<select id="select_japanese" class="select">
+								<option value="">簡単な会話は可能</option>
+								<option value="1">挨拶程度</option>
+							</select>
+						</dd>
+						<dt class="h_experience">講師歴</dt>
+						<dd class="experience">
+							<select id="select_experience" class="select">
+								<option value="">1年未満</option>
+								<option value="1">1年以上</option>
+								<option value="2">2年以上</option>
+								<option value="3">4年以上</option>
+								<option value="4">5年以上</option>
+							</select>
+						</dd>
+					</dl>
+					<dl class="select_area_third">
+						<dt class="h_feature"> 特徴</dt>
+						<dd class="feature">
+							<label class="beginner">
+								<input class="feature_cb " id="" name="" type="checkbox" value="" >
+								初心者</label>
+						</dd>
+						<dd class="feature">
+							<label class="business">
+								<input class="feature_cb" id="" name="" type="checkbox" value="">
+								ビジネス </label>
+						</dd>
+						<dd class="feature">
+							<label class="kid">
+								<input class="feature_cb" id="" name="" type="checkbox" value="">
+								キッズ </label>
+						</dd>
+						<dd class="feature">
+							<label class="native">
+								<input class="feature_cb" id="" name="" type="checkbox" value="">
+								ネイティブ </label>
+						</dd>
+						<dd class="feature">
+							<label class="japanese">
+								<input class="feature_cb" id="" name="" type="checkbox" value="">
+								日本人講師 </label>
+						</dd>
+						<dd class="feature">
+							<label class="pronunciation">
+								<input class="feature_cb" id="" name="" type="checkbox" value="">
+								発音 </label>
+						</dd>
+						<dd class="feature">
+							<label class="toeic">
+								<input class="feature_cb" id="" name="" type="checkbox" value="">
+								TOEIC </label>
+						</dd>
+						<dd class="feature">
+							<label class="toefl">
+								<input class="feature_cb" id="" name="" type="checkbox" value="">
+								TOEFL </label>
+						</dd>
+						<dd class="feature">
+							<label class="callan">
+								<input class="feature_cb" id="" name="" type="checkbox" value="" alt="カランメゾット">
+								カランメゾット </label>
+						</dd>
+						<dd class="feature">
+							<label class="dme">
+								<input class="feature_cb" id="" name="" type="checkbox" value="" alt="DMEメゾッド">
+								DMEメゾッド </label>
+						</dd>
+					</dl>
+				</form>
+			</div>
+			<div class="btn_area">
+				<div class="btn_area_inner">
+					<form onreset="return confirm('選択内容をクリアしてもよろしいですか？')">
+						<label class="allreset">
+							<input id="allreset" type="reset" value="リセット">
+						</label>
+						<span class="ok_search"><a href="gl_koshi_list_detail.html">この条件で検索</a></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<script>
+	var searchbox = $('#searchbox');
+	$(searchbox).hide();
+	$('#searchbox_button').on('click',function(e){
+		e.stopPropagation();
+		$('#searchbox').fadeToggle();
+
+		});
+	$(searchbox).click(function(e){
+		e.stopPropagation();
+	});
+	$(document).click(function(){
+		$('#searchbox').fadeOut(300)
+	})
+
+</script> 
+<script>
+	$(":checked").parent().css("background","#cccccc");
+	$("input").click(function(e) {
+		var t = e.target.type;
+		var chk = $(this).prop('checked');
+		var name = $(this).attr('name');
+		if(t == 'checkbox') {
+			if(chk == true){
+				$(this).parent().css('background', '#cccccc');
+			} else {
+				$(this).parent().css('background-color', '#FFFFFF');
+			}
+			return true;
+		}
+	});
+</script> 
+<script>
+	$("#allreset").bind("click", function(){
+		$('.select_area_third input').parent().css('background-color','#FFFFFF');
+		var mysel = document.getElementsByClassName("select");
+		for(var i=0; i < mysel.length;i++){
+			mysel[i].selectedIndex = 0;
+
+		}
+		return false;
+	});
+</script> 

@@ -1,0 +1,5 @@
+[08-Jun-2016 01:45:22 America/Chicago] PHP Fatal error:  Call to a member function bootstrapPagination() on null in /home2/dsfa3545/public_html/beta.seminar/application/controllers/AdminController.php on line 239
+[08-Jun-2016 02:01:50 America/Chicago] PHP Fatal error:  Cannot redeclare class PaginateDesign in /home2/dsfa3545/public_html/beta.seminar/system/libraries/PaginateDesign.php on line 4
+[08-Jun-2016 02:05:30 America/Chicago] PHP Fatal error:  Cannot redeclare class PaginateDesign in /home2/dsfa3545/public_html/beta.seminar/system/libraries/PaginateDesign.php on line 4
+[08-Jun-2016 03:22:06 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home2/dsfa3545/public_html/beta.seminar/application/views/userPage/registrationForm.php on line 173
+[08-Jun-2016 03:22:14 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home2/dsfa3545/public_html/beta.seminar/application/views/userPage/registrationForm.php on line 173

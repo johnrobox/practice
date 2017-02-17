@@ -1,0 +1,2229 @@
+@charset "utf-8";
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	input[type="text"]:focus;
+  	outline: 0;
+}
+a:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.section--wrap {
+	width: 1024px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*-----------------------------------------------*/
+/*	section--header_content
+/*-----------------------------------------------*/
+.section--header_content .header_ttl, 
+.section--header_content .ttl_image {
+	width: 344px;
+	padding-top: 4px;
+	margin-left: -15px
+}
+.section--header_content .header_ttl a:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=10);
+}
+.section--header_content nav {
+	color: #fff;
+	width: 100%;
+	height: 50px;
+	background: #333333;
+	padding: 15px 0;
+}
+.section--header_content .header_inner {
+	position: relative;
+	width: 980px;
+	margin: -7px auto;
+}
+.section--header_content  .header_nav.teacher,
+.section--header_content  .header_nav.scholl {
+    padding-top: 18px;
+}
+.section--header_content .header_inner ul .header_nav.teacher:hover,
+.section--header_content .header_inner ul .header_nav.scholl:hover {
+	color: #f39c12;
+	display: block;
+	text-align: center;
+	background-color: #111111;
+    opacity: 1.0;
+    filter: alpha(opacity=10);
+}
+.section--header_content .header_search_area{
+	margin-left:auto;
+	margin-top: -62px;
+    overflow: hidden;
+}
+.section--header_content .header_ttl a, 
+.section--header_content .header_nav {
+	color: #ffffff;
+	display: block;
+	width: 170px;
+	height: 35px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+.section--header_content .header_ttl a, 
+.section--header_content .header_nav {
+	color: #ffffff;
+	display: block;
+	width: 170px;
+	    height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+.section--header_content .header_inner ul {
+	display: table;
+	width: 344px;
+}
+.section--header_content .header_inner ul li {
+	display: table-cell;
+	vertical-align: middle;
+	width: 170px;
+}
+.section--header_content .header_ttl a {
+	display: block;
+	width: 344px;
+}
+/*-----------------------------------------------*/
+/*	section--search_area
+/*-----------------------------------------------*/
+.section--search_area .search_area_wrap {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	background-color: #f4f3f3;
+	border-bottom: 1px solid #CCCCCC;
+	height: 68px;
+	position:relative;
+	z-index:0;
+}
+.section--search_area .search_area{
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.section--search_area .input_keyword {
+	height: 38px;
+	width: 326px;
+	padding-left: 13px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-right:1px dotted #CCCCCC;
+}
+.section--search_area #select_scholl {
+	border: none;
+	width: 235px;
+	height: 38px;
+	padding-left: 15px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background-color:#FFFFFF !important;
+}
+.section--search_area .search_btn {
+	height: 38px;
+	width: 52px;
+	text-align: center;
+	background-color: #19c1c2;
+	cursor: pointer;
+}
+
+.section--search_area .fa.fa-search {
+	margin-top: 10px;
+	color: #FFFFFF;
+	padding-left: 0px;
+}
+.section--search_area .search_area_table{
+	display: block;
+	padding-top: 15px;
+}
+.section--search_area .text_search {
+    border-bottom: 1px solid #19c1c2;
+    padding-bottom: 0px;
+    margin-left: 20px;
+}
+.section--search_area .detail {
+	color: #19c1c2;
+	font-weight:bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+/*-----------------------------------------------*/
+/*	section--serch_check
+/*-----------------------------------------------*/
+
+/*////// arrow_box_START //////*/
+.section--search_check .search_check_wrap {
+	position: relative;
+	margin-top: 19px;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: 1px 1px 3px #CCCCCC;
+	box-shadow: 1px 1px 3px #CCCCCC;
+}
+.section--search_check .search_check_wrap {
+    width: 721px;
+    background-color: #FFFFFF;
+}
+.section--search_check .search_check_wrap:after, 
+.section--search_check .search_check_wrap:before {
+	bottom: 100%;
+	left: 86%;
+	border: solid transparent;
+	content: " ";
+	height: 16px;
+	position: absolute;
+	pointer-events: none;
+}
+.section--search_check .search_check_wrap:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 14px;
+	margin-left: -14px;
+}
+.section--search_check .search_check_wrap:before {
+	border-color: rgba(204, 204, 204, 0);
+	border-bottom-color: #cccccc;
+	border-width: 15px;
+	margin-left: -15px;
+}
+.section--search_check #searchbox{
+	margin:-34px 0 0 -194px;
+	position: absolute;
+	z-index:999;
+	left: 30%;
+	-moz-box-shadow: 3px 2px 15px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 3px 2px 15px rgba(0,0,0,0.5);
+	box-shadow: 3px 2px 15px rgba(0,0,0,0.5);
+}
+/*////// arrow_box_END //////*/
+
+.section--search_check .search_check_inner {
+	display: block;
+	width: 690px;
+	height: 260px;
+	margin-top: 3px;
+	padding-bottom: -9px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+}
+.section--search_check .select_area_top {
+	display: block;
+	background-color: #FFFFFF;
+	height: 78px;
+	margin: 0 0 0 2px;
+}
+.section--search_check dl {
+	border-bottom: 1px dotted #333333;
+	margin-top: -4px;
+	margin-left: 2px;
+}
+
+.section--search_check .select_area_third {
+	border: none;
+	margin:3px 0 -20px 80px;
+	font-size: 13px;
+	text-indent: -38px;
+	padding-left: -2em;
+}
+.section--search_check dl dt, 
+.section--search_check dl dd {
+	display: inline-block;
+	font-size: 14px;
+	margin: 21px 0;
+}
+.section--search_check .h_feature {
+    width: 30px;
+    height: 0px;
+	margin-right:7px;
+
+}
+.section--search_check .feature {
+	margin-right: 40px;
+	margin-top:10px;
+}
+.section--search_check dl dt {
+	font-weight: bold;
+	padding-right: 4px;
+}
+.section--search_check #select_place, 
+.section--search_check #select_sex, 
+.section--search_check #select_age, 
+.section--search_check #select_japanese, 
+.section--search_check #select_experience {
+	border: 1px solid #999999;
+	height: 38px;
+	margin-right: 40px;
+	padding-left: 10px;
+	background-color: #FFFFFF !important;
+}
+.section--search_check #select_place {
+	width: 190px;
+}
+.section--search_check #select_sex {
+	width: 90px;
+}
+.section--search_check #select_age {
+	width: 100px;
+}
+.section--search_check #select_japanese {
+	width: 190px;
+}
+.section--search_check #select_experience {
+	width: 100px;
+}
+.section--search_check input[type='checkbox'] {
+	display: none;
+}
+.section--search_check .text {
+	margin-top: 2px;
+}
+.section--search_check .feature label, 
+.section--search_check input[type='checkbox']+label {
+	border: 1px solid #999999;
+	border-radius: 5px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	margin: 0px 7px 0px 0;
+	padding: 7px 0px 0 0;
+}
+.section--search_check .feature label, 
+.section--search_check input[type='checkbox']+label:before, 
+.section--search_check input[type='checkbox']+label:after {
+	cursor: pointer;
+	padding: 6px 10px 4px 35px !important;
+	background-position: 12px 7px !important;
+	background-repeat: no-repeat !important;
+}
+.section--search_check input[type='checkbox']+label:before {
+	background-color: #ffffff;
+}
+.section--search_check input[type='checkbox']+label:after {
+	background-color: #cccccc;
+}
+.section--search_check .feature .beginner, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/beginner.png) !important;
+}
+.section--search_check .feature .business, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/business.png) !important;
+}
+.section--search_check .feature .kid, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/kid.png) !important;
+}
+.section--search_check .feature .native, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/native.png) !important;
+}
+.section--search_check .feature .japanese, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/japanese.png) !important;
+}
+.section--search_check .feature .pronunciation, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/pronunciation.png) !important;
+}
+.section--search_check .feature .toeic, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/toeic.png) !important;
+}
+.section--search_check .feature .toefl, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/toefl.png) !important;
+}
+.section--search_check .feature .callan,
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/callan.png) !important;
+}
+.section--search_check .feature .dme, 
+.section--search_check input[type='checkbox']+label {
+	background-image: url(../image/icon/dme.png) !important;
+}
+.section--search_check .btn_area {
+	height: 80px;
+	padding-top: 21px;
+	background-color: #F4F3F3;
+	border-top: 1px solid #cccccc;
+}
+.section--search_check .btn_area_inner {
+	margin-left: 135px;
+	text-decoration: none;
+}
+.section--search_check .allreset, 
+.section--search_check .ok_search {
+	display: table-cell;
+	vertical-align: top;
+}
+.section--search_check .allreset a, 
+.section--search_check .ok_search a, 
+.section--search_check #allreset {
+	display: table-cell;
+}
+.section--search_check #allreset {
+	width: 150px;
+	background-color: #999999;
+	margin-right: 30px;
+	text-decoration: none;
+	height: 36px;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 2px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.section--search_check .ok_search a {
+	width: 250px;
+	text-decoration: none;
+	background-color: #19c1c2;
+	height: 36px;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 9px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+/*-----------------------------------------------*/
+/*	section--main_content
+/*-----------------------------------------------*/
+.section--main_content .conditions {
+	font-weight: bold;
+	font-size: 14px;
+	color: #333333;
+	height: 30px;
+	padding-top: 9px;
+	margin-bottom: 30px;
+	background-color: #f4f3f3;
+}
+.section--main_content .main_content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	margin-bottom: 14px;
+}
+.section--main_content .teacher_serch {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+/*///// ChangeTab_START /////*/
+.section--main_content ul{
+    display: block;
+	cursor:pointer;
+}
+.section--main_content ul li.selected {
+	color: #333333;
+	background-color: #FFFFFF;
+	position:relative;
+	z-index: 5;
+	top: 1px;
+}
+.section--main_content ul li{
+	display: inline-block;
+	width: 120px;
+	height: 35px;
+	margin-right:10px;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background-color:#f4f3f3;
+	padding-top: 10px;
+	text-align: center;
+	color: #333333;
+	font-size: 14px;
+	position: relative;   
+	z-index: 1;
+}
+/*///// ChangeTab_END /////*/
+/*-----------------------------------------------*/
+/*	section--main_content_serch
+/*-----------------------------------------------*/
+.section--main_content_serch .conditions {
+	font-weight: bold;
+	font-size: 14px;
+	color: #333333;
+	height: 30px;
+	padding-top: 9px;
+	margin-bottom: 30px;
+	background-color: #f4f3f3;
+}
+.section--main_content_serch .main_content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	margin-bottom: 14px;
+}
+.section--main_content_serch .teacher_serch {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+/*///// ChangeTab_START /////*/
+.section--main_content_serch ul{
+    display: block;
+	cursor:pointer;
+}
+.section--main_content_serch ul li.selected {
+	color: #333333;
+	background-color: #FFFFFF;
+	position:relative;
+	z-index: 5;
+	top: 1px;
+}
+.section--main_content_serch ul li{
+	display: inline-block;
+	width: 120px;
+	height: 35px;
+	margin-right:10px;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background-color:#f4f3f3;
+	padding-top: 10px;
+	text-align: center;
+	color: #333333;
+	font-size: 14px;
+	position: relative;   
+	z-index: 1;
+}
+/*///// ChangeTab_END /////*/
+/*-----------------------------------------------*/
+/*	section--review_list
+/*-----------------------------------------------*/
+.section--review_list .main_content_wrap {
+	margin-left: auto;
+	width: 850px;
+}
+/*///// ChangeTab_START /////*/
+.section--review_list .tab_menu_list {
+    display: block;
+	cursor:pointer;
+}
+.section--review_list .tab_menu_list li.selected {
+	color: #333333;
+	background-color: #FFFFFF;
+	position:relative;
+	top: 1px;
+	z-index: 5;
+}
+.section--review_list .tab_menu_list li {
+	display: inline-block;
+	width: 120px;
+	height: 35px;
+	margin-right:10px;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background-color:#f4f3f3;
+	padding-top: 10px;
+	text-align: center;
+	color: #333333;
+	font-size: 14px;
+	position: relative;   
+	z-index: 1;
+}
+/*///// ChangeTab_END /////*/
+
+.section--review_list .user_review {
+	width: 850px;
+	height: 36px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-left: auto;
+	padding: 10px 0 10px 10px;
+	background-color: #999999;
+}
+.section--review_list .review_btn a{
+	display: block;
+	width: 150px;
+	height: 30px;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	background-color: #19c1c2;
+	padding-top: 9px;
+	margin-top: -10px;
+	float: right;
+	clear: both;
+}
+.section--review_list #tabarea {
+    margin-bottom: -22px;
+}
+.section--review_list .this_page {
+    display: inline-block;
+    width: 285px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.section--review_list .this_page {
+    margin:38px -55px 20px 0;
+}
+.section--review_list .page{
+	display:inline-block;
+	margin-bottom: 30px;
+}
+.section--review_list .next_page, 
+.section--review_list .page_nomber, 
+.section--review_list .page_nomber.now {
+	display: block;
+	height: 26px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	color: #999999;
+	border: 1px solid #999999;
+}
+.section--review_list .page ul {
+	display: block;
+	margin:30px 0 0 77px;
+}
+.section--review_list .page ul li {
+	display: inline-block;
+	margin-right: 5px;
+}
+.section--review_list .page_nomber, 
+.section--review_list .page_nomber.now {
+	width: 40px;
+	padding-top: 5px;
+}
+.section--review_list .page_nomber.now {
+	background-color: #999999;
+	color: #FFFFFF;
+}
+.section--review_list .next_page {
+	width: 28px;
+	padding-top: 4px;
+}
+/*///// Tab_Inner_Change_START /////*/
+.section--review_list .review_sentence_inner ul {
+	display: table;
+	width: 100%;
+}
+.section--review_list .review_sentence_inner ul li {
+	display: table-cell;
+	vertical-align: top;
+}
+.section--review_list .main_contnet_list {
+    display: block;
+    width: 850px;
+    margin-left: auto;
+    border-top: 1px solid #CCCCCC;
+    position: relative;
+    z-index: 0;
+}
+.section--review_list .review_box {
+	width: 416px;
+	height: 188px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	border: 1px solid #cccccc;
+}
+.section--review_list .review_box_inner {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 385px;
+	height: 148px;
+}
+.section--review_list .user_name, 
+.section--review_list .date, 
+.section--review_list .star {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+.section--review_list .user_name {
+	color: #2b80b9;
+}
+.section--review_list .date:before {
+	content: "|";
+}
+.section--review_list .star {
+	color: #f39c12;
+	float: right;
+	clear: both;
+}
+.section--review_list .box_line {
+	border-bottom: 1px dotted #333333;
+	margin-bottom: 9px;
+}
+.section--review_list .sentence {
+	font-size: 14px;
+	line-height: 1.8;
+}
+.section--review_list .review_area{
+    width: 850px;
+    margin-left:auto;
+}
+/*///// Tab_Inner_Change_END /////*/
+
+/*-----------------------------------------------*/
+/*	section--review_modal
+/*-----------------------------------------------*/
+.section--review_modal .review_area {
+    width: 850px;
+    margin-left: auto;
+}
+.section--review_modal .review_btn.foot{
+	display: block;
+	margin-right: auto;
+    margin-left: auto;
+	width: 300px;
+	height: 46px;
+	font-size: 16px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	background-color: #19c1c2;
+	padding-top: 15px;
+}
+/*/////	/modal_review_START  /////*/
+.section--review_modal .modal_review_wrap{
+	width:774px;
+	height:600px;
+	background-color:#ffffff;
+	border:4px solid #666666;
+}
+.section--review_modal .modal_review{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:725px;
+	height:540px;
+	margin-top:20px;
+}
+.section--review_modal .modal_review h3{
+	display:table;
+	width:726px;
+	height:35px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:16px;
+	text-align:center;
+	padding-top: 10px;
+	background-color:#666666;
+	margin-bottom:20px;
+}
+.section--review_modal .review_ttl{
+	display:table-cell;
+	vertical-align:top;
+	border-right:5px solid #FFFFFF;
+}
+.section--review_modal .input_review{
+	display:table-cell;
+	vertical-align:top;
+	padding-bottom: 15px;
+}
+.section--review_modal .review_ttl li{
+	width:180px;
+	font-size:14px;
+	padding:15px 0 0 10px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#666666;
+	margin-bottom:5px;
+}
+.section--review_modal .number{
+	font-size:14px;
+	color:#333333;
+}
+.section--review_modal .input_review li{
+	width:537px;
+	font-size:14px;
+	padding:15px 20px;
+	color:#333333;
+	background-color:#dddddd;
+	margin-bottom:5px;
+}
+.section--review_modal .input_review li span{
+	margin-bottom:10px;
+}
+.section--review_modal .name,
+.section--review_modal .evaluation,
+.section--review_modal .input_review li span,
+.section--review_modal .select_evaluation{
+	height:90px;
+}
+.section--review_modal .comment,
+.section--review_modal .input_comment{
+	height:173px;
+}
+.section--review_modal #name,
+.section--review_modal .select_evaluation select{
+	width:200px;
+	height:38px;
+	background-color:#FFFFFF;
+	margin-top: 10px;
+}
+.section--review_modal .input, 
+.section--review_modal .select,
+.section--review_modal .star {
+	color: #f39c12;
+}
+.section--review_modal #input_comment_inner{
+	width: 500px;
+	height:120px;
+	color:#333333;
+	background-color:#FFFFFF;
+	margin-top: 10px;
+	padding:10px;
+}
+.section--review_modal .botton_area_1{
+	display:block;
+	text-align:center;
+	margin-bottom: 30px;
+}
+.section--review_modal .cansel_btn a,
+.section--review_modal .cansel_btn.close a{
+	display: inline-block;
+	width:150px;
+	height:36px;
+	text-align:center;
+	color:#FFFFFF;
+	text-decoration:none;
+	background-color:#999999;
+	font-weight:bold;
+	padding-top: 10px;
+}
+.section--review_modal .send_btn a{
+	display: inline-block;
+    margin-left: 15px;
+	width: 250px;
+	height: 36px;
+	font-size: 16px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	background-color: #19c1c2;
+	padding-top: 10px;
+}
+.section--review_modal .attention{
+	line-height: 1.9;
+	font-size:12px;
+	color:#333333;
+	margin-bottom:30px;
+}
+.section--review_modal #modal_1,
+.section--review_modal #modal_2,
+.section--review_modal #modal_3{
+  display: none;
+  width:850px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.section--review_modal .review_confirmation,
+.section--review_modal .user_sentence{
+	line-height: 1.9;
+	font-size:14px;
+	color:#333333;
+}
+.section--review_modal .input_review_confirmation{
+	display:table-cell;
+	vertical-align:top;
+    padding: 15px 10px 74px 20px;
+	margin-bottom:15px;
+}
+/*/////	/modal_review_END  /////*/
+
+/*/////	/modal_review_START  /////*/
+.section--review_modal .return_btn a{
+	display: inline-block;
+	width:150px;
+	height:36px;
+	text-align:center;
+	color:#FFFFFF;
+	text-decoration:none;
+	background-color:#999999;
+	font-weight:bold;
+	padding-top: 10px;
+}
+.section--review_modal .name_area,
+.section--review_modal .evaluation_area,
+.section--review_modal .comment_area{
+	width:180px;
+	font-size:14px;
+	padding:15px 0 0 10px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#666666;
+	margin-bottom:5px;
+}
+.section--review_modal .name_area,
+.section--review_modal .evaluation_area{
+	height:40px;
+}
+.section--review_modal .comment_area{
+	height:120px;
+}
+.section--review_modal .input_review_confirmation ul li {
+    padding-bottom: 28px;
+	font-size:14px;
+}
+.section--review_modal .botton_area_2{
+	width:725px;
+	text-align:center;
+	margin-bottom: 22px;
+}
+/*/////	/modal_review_END  /////*/
+
+/*/////	/modal_review_START  /////*/
+.section--review_modal .review_finish{
+	font-size:25px;
+	font-weight:bold;
+	color:#333333;
+    padding: 75px 0 55px 0;
+    text-align: center;
+}
+/*/////	/modal_review_END  /////*/
+/*-----------------------------------------------*/
+/*	section--teacher_list
+/*-----------------------------------------------*/
+
+/*//// TAB_Inner_Change_START /////*/
+.section--teacher_list #tabarea {
+	display: block;
+	margin: -9px auto 8px auto;
+    padding-top: 10px;
+    width: 1024px;
+    position: relative;
+    top: -1px;
+    z-index: 0;
+}
+/*///// TAB_Inner_Change_END /////*/
+
+.section--teacher_list .this_page {
+	display:inline-block;
+	font-size: 14px;
+	font-weight: bold;
+    margin:39px 204px 13px 0;
+}
+.section--teacher_list .page{
+	display:inline-block;
+}
+.section--teacher_list .this_page.foot{
+	margin-top: 19px;
+}
+.section--teacher_list .next_page, 
+.section--teacher_list .page_nomber, 
+.section--teacher_list .page_nomber.now {
+	display: block;
+	height: 26px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	color: #999999;
+	border: 1px solid #999999;
+}
+.section--teacher_list .page_nav {
+	display:block;
+	margin-top: 14px;
+}
+.section--teacher_list .page_nav li {
+	display: inline-block;
+	margin-left: 5px;
+}
+.section--teacher_list .page_nomber, 
+.section--teacher_list .page_nomber.now {
+	width: 40px;
+	padding-top: 5px;
+}
+.section--teacher_list .page_nomber.now {
+	color: #ffffff;
+	background-color: #999999;
+}
+.section--teacher_list .next_page {
+	width: 28px;
+	padding-top: 4px;
+}
+.section--teacher_list .tabbox {
+	display: inline-block;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	padding-top: 7px;
+	color: #333333;
+}
+
+/*//// TAB_Inner_Change_START /////*/
+.section--teacher_list .main_contnet_list {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	margin-top: -14px;
+    padding-top: 8px;
+	border-top: 1px solid #cccccc;
+}
+.section--teacher_list .main_content_inner ul {
+	width: 100%;
+}
+.section--teacher_list .main_contnt_list {
+	margin: 10px 0 40px 0;
+	width: 1024px;
+	height: 435px;
+	border: 1px solid #CCCCCC;
+}
+.section--teacher_list .main_content_inner ul li {
+	display: table-cell;
+	vertical-align: top;
+	border: none;
+	padding-right: 20px;
+}
+.section--teacher_list .teacher_list {
+	width: 328px;
+	height: 194px;
+	margin: 10px 0;
+	margin-right: 20px;
+	border: 1px solid #CCCCCC;
+}
+.section--teacher_list .teacher_list:last-child {
+    margin-right: 0px;
+}
+.section--teacher_list .teacher_list_inner {
+	display: block;
+	margin: 17px -17px -17px 17px;
+	width: 297px;
+	height: 162px;
+}
+.section--teacher_list .teacher_name {
+	display: block;
+	width: 100%;
+	text-align:left;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #333333;
+}
+.section--teacher_list .teacher_name span, 
+.section--teacher_list .japanese {
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: bold;
+	padding-bottom: 9px;
+}
+.section--teacher_list .japanese {
+	font-size: 11px;
+	padding-bottom: 9px;
+}
+.section--teacher_list .teacher_name span {
+	display: inline-block;
+	margin-top: -5px;
+	padding-right: -10px;
+}
+.section--teacher_list .teacher_photo {
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+}
+.section--teacher_list .teacer_status {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 17px;
+	padding-top: -2px;
+	margin-top: -5px;
+	text-align: left;
+}
+.section--teacher_list .school_name {
+	color: #19c1c2;
+	font-size: 13px;
+	line-height: 1.9;
+	font-weight: bold;
+}
+.section--teacher_list .teacer_status tbody tr td {
+	color: #333333;
+	font-size: 13px;
+	line-height: 1.9;
+}
+.section--teacher_list .star {
+	color: #f39c12;
+	font-weight: bold;
+	font-size:16px;
+}
+/*///// TAB_Inner_Change_END /////*/
+/*-----------------------------------------------*/
+/*	section--more_search
+/*-----------------------------------------------*/
+.section--teacher_list .more {
+	display: block;
+	text-align: center;
+	width: 148px;
+	height: 30px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-top: 16px;
+	padding-top: 2px;;
+	background-color: #333333;
+}
+.section--more_search .more_search a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-top: 10px;
+	width: 250px;
+	height: 36px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #19c1c2;
+}
+/*-----------------------------------------------*/
+/*	section--plofile
+/*-----------------------------------------------*/
+.section--plofile .detail_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	height: 480px;
+	margin-bottom: 40px;
+}
+.section--plofile .teacher_name {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	display: block;
+}
+.section--plofile .photo {
+	background-image: url(../image/teacher/01.png);
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+	object-fit: fill;
+	margin-right: 5px;
+	margin-bottom: 15px;
+}
+.section--plofile .star {
+	color: #f39c12;
+	font-weight: bold;
+}
+.section--plofile .number_of_people {
+	font-size: 13px;
+}
+.section--plofile .review a, 
+.section--plofile .movie a {
+	display: block;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	padding-top: 8px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.section--plofile .review a {
+	background-color: #19c1c2;
+	margin-top: 15px;
+}
+.section--plofile .movie a {
+	background-color: #e62117;
+}
+.section--plofile .plofile {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 270px;
+}
+.section--plofile .plofile_datail_wrap {
+	display: inline-block;
+	width: 850px;
+	height: 320px;
+}
+.section--plofile .plofile_detail {
+	display: inline-block;
+	margin-left: 6px;
+	width: 415px;
+	height: 320px;
+	margin-bottom: 40px;
+}
+.section--plofile .plofile_detail tr {
+	border-bottom: 1px dotted #333333;
+}
+.section--plofile .plofile_detail tr:first-child {
+	border-top: 1px dotted #333333;
+}
+.section--plofile .plofile_detail th {
+	width: 145px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	padding: 6px 0 6px 0;
+	text-align: left;
+}
+.section--plofile .plofile_detail .table_back_color{
+	width:130px;
+	height:42px;
+	padding:15px 0 0 6px;
+	background-color:#f4f3f3;
+}
+.section--plofile .plofile_detail td {
+	width: 270px;
+}
+.section--plofile .text {
+	color: #333333;
+	font-size: 14px;
+}
+.section--plofile .scholl {
+	color: #19c1c2;
+	font-size: 14px;
+	font-weight: bold;
+}
+.section--plofile .feature {
+	margin-left: 15px;
+}
+.section--plofile .feature ul {
+	display: block;
+}
+.section--plofile .feature ul li {
+	display: inline-block;
+}
+.section--plofile .feature ul li p {
+	border: 1px solid #999999;
+	border-radius: 5px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	margin: 0 6px 10px 0;
+	padding: 6px 10px 4px 35px;
+	background-position: 12px 7px;
+	background-repeat: no-repeat;
+}
+.section--plofile .feature ul li p span {
+	font-size: 13px;
+}
+.section--plofile .beginner {
+	background-image: url(../image/icon/beginner.png);
+}
+.section--plofile .business {
+	background-image: url(../image/icon/business.png);
+}
+.section--plofile .kid {
+	background-image: url(../image/icon/kid.png);
+}
+.section--plofile .native {
+	background-image: url(../image/icon/native.png);
+}
+.section--plofile .japanese {
+	background-image: url(../image/icon/japanese.png);
+}
+.section--plofile .pronunciation {
+	background-image: url(../image/icon/pronunciation.png);
+}
+.section--plofile .toeic {
+	background-image: url(../image/icon/toeic.png);
+}
+.section--plofile .toefl {
+	background-image: url(../image/icon/toefl.png);
+}
+.section--plofile .callan {
+	background-image: url(../image/icon/callan.png);
+}
+.section--plofile .dme {
+	background-image: url(../image/icon/dme.png);
+}
+/*-----------------------------------------------*/
+/*	section--school_list
+/*-----------------------------------------------*/
+
+.section--school_list .school_list_wrap{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1024px;
+}
+.section--school_list .school_list_all{
+	display:block;
+	width:1024px;
+	height:194px;
+	border:1px solid #cccccc;
+	margin-bottom:20px;
+}
+.section--school_list .scholl{
+	width:990px;
+	height:160px;
+	margin-top:17px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.section--school_list .review_sentence_inner ul {
+	display: table;
+	width: 100%;
+}
+.section--school_list .review_sentence_inner ul li {
+	display: table-cell;
+	vertical-align: top;
+}
+.section--school_list .main_contnet_list {
+	display: block;
+	width: 850px;
+	margin-left: auto;
+	border-top: 1px solid #CCCCCC;
+	margin-top: -1px;
+}
+.section--school_list .scholl p{
+	display: table-cell;
+    vertical-align: top;
+    line-height: 2.0;
+}
+.section--school_list .line_box p{
+	display:table-cell;
+}
+.section--school_list .box_inner{
+	display: table-cell;
+	vertical-align:top;
+	padding-left: 10px;
+}
+.section--school_list .school_cap{
+	width:120px;
+	height:160px;
+	background-image:url(../image/school/nativecamp.png);
+}
+.section--school_list .border_dotted{
+	width:854px;
+	display: table;
+	padding-top: 13px;
+	border-top:1px dotted #333333;
+}
+
+.section--school_list .school_name_h{
+	display: table-cell;
+	vertical-align: top;
+	font-size:16px;
+	font-weight:bold;
+	color:#19c1c2;
+	padding-bottom: 4px;
+}
+.section--school_list .scholl_sentence{
+	display: table-cell;
+	vertical-align: top;
+	font-size:13px;
+	color:#333333;
+	width:410px;
+	line-height:1.5;
+	padding-right: 10px;
+}
+.section--school_list .scholl_information{
+	display:table-cell;
+	vertical-align: top;
+   	padding-top: 10px;
+}
+.section--school_list .scholl_information th{
+	width:150px;
+	height:30px;
+	color:#FFFFFF;
+	font-size:13px;
+	background-color:#f39c12;
+	text-align:center;
+	border:1px solid #999999;
+}
+.section--school_list .scholl_information td{
+	width:150px;
+	height:40px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #999999;
+}
+.section--school_list .scholl_information td:after{
+	font-size:13px;
+	font-weight:100;
+}
+.section--school_list .scholl_information .number_of_times:after{
+	content:" 回";
+}
+.section--school_list .scholl_information .yen:after{
+	content:" 円";
+}
+
+.section--school_list .scholl_information .person:after{
+	content:" 人";
+}
+.section--school_list .morning_mid{
+	display:block;
+	margin-top: 15px;
+	float: left;
+}
+.section--school_list .morning,
+.section--school_list .mid{
+	display:inline-block;
+	width:73px;
+	height:30px;
+	text-align:center;
+	padding: 8px 3px 0 15px;
+	font-size:13px;
+	border:1px solid #999999;
+	border-radius:5px;
+	vertical-align:bottom;
+	background-repeat:no-repeat;
+	background-position:5px 5px;
+	margin-right:5px;
+}
+.section--school_list .morning{
+	background-image: url(../image/icon/sun.png);
+}
+.section--school_list .mid{
+	background-image: url(../image/icon/night.png);
+}
+.section--school_list .detail_btn a{
+	display: inline-block;
+	width:150px;
+	height:30px;
+	font-size:14px;
+	text-align:center;
+	padding-top: 9px;
+	text-decoration:none;
+	color:#FFFFFF;
+	background-color:#333333;
+}
+.section--school_list .fix_btn{
+	text-align:right;
+}
+.section--school_list .detail_btn {
+	display: inline-block;
+	margin-top: 15px;
+	vertical-align:bottom;
+	clear: both;
+}
+/*///// ChangeTab_START /////*/
+.section--school_list ul.tabs {
+    display: block;
+}
+.section--school_list ul li {
+    display: inline-block;
+	margin-right: 5px;
+}
+.section--school_list .span{
+	display: inline-block;
+	width: 120px;
+	height: 38px;
+	border-bottom: 3px solid #FFFFFF;
+}
+.section--school_list ul li{
+	display: inline-block;
+	width: 180px;
+	height: 36px;
+	border: 1px solid #cccccc;
+	padding-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	font-size: 14px;
+}
+/*///// ChangeTab_END /////*/
+
+/*-----------------------------------------------*/
+/*	section--school_tab_area
+/*-----------------------------------------------*/
+.section--school_tab_area .main_content_wrap {
+    margin-top: 37px;
+}
+.section--school_tab_area .conditions {
+	font-weight: bold;
+	font-size: 14px;
+	color: #333333;
+	height: 30px;
+	padding-top: 9px;
+	margin-bottom: 30px;
+	background-color: #f4f3f3;
+}
+.section--school_tab_area .main_content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	margin-bottom: 8px;
+}
+.section--school_tab_area .teacher_serch {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.section--school_tab_area ul li {
+	width: 180px;
+	height: 36px;
+	padding-top: 10px;
+	font-size: 14px;
+	background-color: #f4f3f3;
+	margin-top: -10px;
+}
+
+/*///// ChangeTab_START /////*/
+.section--school_tab_area ul {
+    display: block;
+	cursor:pointer;
+}
+.section--school_tab_area li.selected {
+	color: #333333;
+	background-color: #FFFFFF;
+	position:relative;
+	top: 1px;
+	z-index: 5;
+}
+
+.section--school_tab_area ul li {
+    display: inline-block;
+	margin-right:10px;
+}
+.section--school_tab_area ul li{
+	display: inline-block;
+	width: 180px;
+	height: 36px;
+	margin-right:10px;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background-color:#f4f3f3;
+	padding-top: 10px;
+	text-align: center;
+	color: #333333;
+	font-size: 14px;
+	position: relative;   
+	z-index: 1;
+}
+/*///// ChangeTab_END /////*/
+
+/*///// Tab_Inner_Change_START /////*/
+.section--school_tab_area .tabarea {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #CCCCCC;
+	margin-top: -13px;
+    padding-top: 10px;
+    width: 1024px;
+    position: relative;
+    top: -1px;
+    z-index: -1;
+}
+/*///// Tab_Inner_Change_END /////*/
+/*-----------------------------------------------*/
+/*	section--school_datail
+/*-----------------------------------------------*/
+.section--school_datail .school_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	margin:35px 0 40px 0;
+}
+.section--school_datail .school_name {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	display: block;
+}
+.section--school_datail .cap {
+	width: 150px;
+	height: 200px;
+	object-fit: fill;
+	margin-right: 5px;
+	margin-bottom: 15px;
+}
+.scool_datail_image {
+    display: inline-block;
+    vertical-align: top;
+}
+.section--school_datail .school_datail_wrap {
+	display: inline-block;
+	width: 850px;
+	height: 320px;
+}
+.section--school_datail .school_detail {
+	display: inline-block;
+	margin-left: 6px;
+	width: 415px;
+	height: 320px;
+	margin-bottom: 40px;
+}
+.section--school_datail .school_detail tr {
+	border-bottom: 1px dotted #333333;
+}
+.section--school_datail .school_detail tr:first-child {
+	border-top: 1px dotted #333333;
+}
+.section--school_datail .school_detail th {
+	width: 145px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	padding: 6px 0;
+	text-align: left;
+}
+.section--school_datail .table_back_color{
+	width:130px;
+	height:42px;
+	padding:15px 0 0 6px;
+	background-color:#f4f3f3;
+}
+.section--school_datail .school_detail td {
+	width: 270px;
+}
+.section--school_datail .text {
+	color: #333333;
+	font-size: 14px;
+}
+.section--school_datail .scholl,
+.section--school_datail .url a{
+	color: #19c1c2;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration:none;
+}
+.section--school_datail .feature {
+	height: 510px;
+	margin-left: 15px;
+}
+.section--school_datail .feature ul {
+	display: block;
+}
+.section--school_datail .feature ul li {
+	display: inline-block;
+}
+.section--school_datail .feature ul li p {
+	border: 1px solid #999999;
+	border-radius: 5px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	margin: 0 5px 10px 0;
+	padding: 6px 10px 4px 35px;
+	background-position: 12px 7px;
+	background-repeat: no-repeat;
+}
+.section--school_datail .feature ul li p span {
+	font-size: 13px;
+}
+.section--school_datail .beginner {
+	background-image: url(../image/icon/beginner.png);
+}
+.section--school_datail .business {
+	background-image: url(../image/icon/business.png);
+}
+.section--school_datail .kid {
+	background-image: url(../image/icon/kid.png);
+}
+.section--school_datail .everyday {
+	background-image: url(../image/icon/everyday.png);
+}
+.section--school_datail .native {
+	background-image: url(../image/icon/native.png);
+}
+.section--school_datail .japanese {
+	background-image: url(../image/icon/japanese.png);
+}
+.section--school_datail .trial {
+	background-image: url(../image/icon/trial.png);
+}
+.section--school_datail .pronunciation {
+	background-image: url(../image/icon/pronunciation.png);
+}
+.section--school_datail .toeic {
+	background-image: url(../image/icon/toeic.png);
+}
+.section--school_datail .toefl {
+	background-image: url(../image/icon/toefl.png);
+}
+.section--school_datail .callan {
+	background-image: url(../image/icon/callan.png);
+}
+.section--school_datail .dme {
+	background-image: url(../image/icon/dme.png);
+}
+.section--school_datail .original {
+	background-image: url(../image/icon/original.png);
+}
+.section--school_datail .free_text {
+	background-image: url(../image/icon/free_text.png);
+}
+.section--school_datail .buy_text {
+	background-image: url(../image/icon/buy_text.png);
+}
+.section--school_datail .morning {
+	background-image: url(../image/icon/sun.png);
+}
+.section--school_datail .mid {
+	background-image: url(../image/icon/night.png);
+}
+.section--school_datail .h_24 {
+	background-image: url(../image/icon/24h.png);
+}
+.section--school_datail .jp_language {
+	background-image: url(../image/icon/jp_language.png);
+}
+.section--school_datail .point {
+	background-image: url(../image/icon/point.png);
+}
+.section--school_datail .responsible {
+	background-image: url(../image/icon/responsible.png);
+}
+.section--school_datail .skype {
+	background-image: url(../image/icon/skype.png);
+}
+.section--school_datail .man_to_man {
+	background-image: url(../image/icon/man-to-man.png);
+}
+.section--school_datail .groups {
+	background-image: url(../image/icon/groups.png);
+}
+/*-----------------------------------------------*/
+/*	section--school_tab_inner
+/*-----------------------------------------------*/
+.section--school_tab_inner .tab_menu{
+	width:850px;
+	margin-left:auto;
+	margin-top:40px;
+}
+/*///// ChangeTab_START /////*/
+.section--school_tab_inner ul {
+    display: block;
+	cursor:pointer;
+}
+.section--school_tab_inner li.selected {
+	color: #333333;
+	background-color: #FFFFFF;
+	position:relative;
+	top: 1px;
+	z-index: 5;
+}
+.section--school_tab_inner ul li {
+    display: inline-block;
+	margin-right:10px;
+}
+.section--school_tab_inner ul li{
+	display: inline-block;
+	width: 180px;
+	height: 36px;
+	margin-right:10px;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background-color:#f4f3f3;
+	padding-top: 10px;
+	text-align: center;
+	color: #333333;
+	font-size: 14px;
+	position: relative;   
+	z-index: 1;
+}
+/*///// ChangeTab_END /////*/
+
+/*//// TAB_Inner_Change_START /////*/
+.section--school_tab_inner #tabarea {
+	display: block;
+	width: 850px;
+	height: 140px;
+	font-size:14px;
+	margin: 1px 0 40px 0;
+	line-height: 1.45;
+	border: 1px solid #CCCCCC;
+    position: relative;
+	top: -1px;
+    z-index: -1;
+}
+.section--school_tab_inner #tabarea p{
+	font-size:14px;
+    width: 850px;
+	padding: 25px 20px;
+}
+/*///// TAB_Inner_Change_END /////*/
+
+/*-----------------------------------------------*/
+/*	section--school_rate_plan
+/*-----------------------------------------------*/
+.section--school_rate_plan .rate_plan_area{
+	width:854px;
+	height:250px;
+	margin-left:auto;
+	margin-bottom:40px;
+}
+.section--school_rate_plan .rate_plan_area h2{
+	width:854px;
+	height:36px;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#999999;
+	padding-left:10px;
+	padding-top:9px;
+	margin-bottom:20px;
+}
+.section--school_rate_plan .rate_plan_list{
+	width:854px;
+	height:194px;
+}
+.section--school_rate_plan .rate_plan_list_inner th{
+	width:214px;
+	height:30px;
+	font-size:13px;
+	background-color:#f4f3f3;
+	border:1px solid #999999;
+}
+.section--school_rate_plan td,
+.section--school_rate_plan .plan_color{
+	width:214px;
+	height:42px;
+	font-size:14px;
+	text-align:center;
+	border-bottom:1px solid #999999;
+	border-right:1px solid #999999;
+	border-left:1px solid #999999;
+}
+.section--school_rate_plan .plan_color{
+	font-weight:bold;
+	color:#2b80b9;
+}
+/*-----------------------------------------------*/
+/*	section--school_time
+/*-----------------------------------------------*/
+.section--school_time .time_line_area_wrap{
+	width:854px;
+	margin:0 auto 50px;
+}
+.section--school_time h2{
+	display:table;
+	width:854px;
+	height:36px;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#999999;
+	padding-left:10px;
+	padding-top:9px;
+	margin-bottom:20px;
+}
+.section--school_time .time_table{
+	table-layout:fixed;
+	width: 853px;
+}
+.section--school_time .day_weekend_time{
+	width:135px;
+	font-size:14px;
+	color:#333333;
+	text-align:center;
+	vertical-align: bottom;
+	line-height:1.5;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	padding-bottom: 15px;
+}
+.section--school_time .blank_table{
+	width:135px;
+	font-size:14px;
+	color:#333333;
+	text-align:center;
+	vertical-align: bottom;
+	line-height:1.5;
+	border-right:1px dotted #999999;
+	border-left: 1px solid #999999;
+	padding-bottom: 15px;
+}
+.section--school_time .one_column,
+.section--school_time .two_column{
+	display:table-cell;
+	vertical-align:top;
+	position: relative;
+    z-index: 20;
+	left:128px;
+	top: 25px;
+}
+.section--school_time .one_column li,
+.section--school_time .two_column li{
+	display:table-cell;
+	vertical-align:top;
+    font-size: 13px;
+    color: #333333;
+	position:relative;
+}
+.section--school_time .one_column li{
+    padding-left: 21.5px;
+    left: -21px;
+}
+.section--school_time .two_column li{
+    padding-right: 13px;
+    left: -4px;
+}
+.section--school_time .time_line_area{
+	width: 853px;
+	margin-left:auto;
+	position: relative;
+    z-index: 9;
+}
+.section--school_time .number_box_area{
+	display: table;
+	width: 745px;
+    position: relative;      
+	margin-top: -188px;
+    margin-left: 109px;
+	padding-top: 10px;
+	z-index: 20;
+}
+.section--school_time .number_box{
+	display:table-cell;
+	vertical-align: top;
+	position: relative;
+	z-index: 25;
+	top: -31px;
+	padding-left: 111px;
+}
+.section--school_time .graph_back_line_time.blue {
+    background-color: #d5e6f1;
+	z-index: -100;
+}
+.section--school_time .graph_back_line_time.yellow {
+    background-color: #fdebcf;
+	z-index: -100;
+}
+.section--school_time .graph_back_line_time.white {
+    background-color: #FFFFFF;
+	z-index: -100;
+}
+.section--school_time .graph_back_line_time.blue_2 {
+    background-color: #d5e6f1;
+	z-index: -100;
+}
+.section--school_time .graph_back_line_time span{
+	text-align:center;
+	position:relative;
+	z-index:100 ;
+	left:-13px;
+}
+.section--school_time .line{
+	display:table-cell;
+	vertical-align: bottom;
+	width: 720px;
+	position: relative;
+	z-index: 0;
+	border-right:1px solid #999999;
+ 	border-top: 1px solid #999999;
+	border-bottom:1px solid #999999;
+}
+.section--school_time .graph_back_line,
+.section--school_time .graph_back_line_time {
+	display:table-cell;
+	vertical-align: bottom;
+	border: none;
+}
+.section--school_time .graph_back_line_time {
+    position: relative;
+    z-index: -50;
+	font-size:13px;
+	color:#333333;
+	padding:11px 8px;
+}
+.section--school_time .graph_back_line{
+	border-top:1px solid #999999;
+ 	border-left: 1px dotted #999999;
+	vertical-align:middle;
+}
+.section--school_time .graph_back_line span{
+	display:inline-block;
+	width:100%;
+	height: 20px;
+}
+.section--school_time .graph_back_line span.on{
+	background:#F00;
+}
+.section--school_time .graph {
+  	position: relative;
+ 	background-color: #FFFFFF;
+ 	width: 270px;
+ 	display: inline-block;
+}
+.section--school_time .all_border_area{
+	display:block;
+	width: 720px;
+	margin-left:auto;
+	margin-top: -125px;
+}
+.section--school_time .border_area.weekday{
+	margin: 7px 0 60px 0;
+}
+.section--school_time .bar_1,
+.section--school_time .bar_2,
+.section--school_time .bar_3,
+.section--school_time .bar_4{
+	display:inline-block;
+    position: relative;
+ 	background-color: #2b80b9;
+ 	height: 15px;
+}
+.section--school_time .bar_1{
+	width:30px;
+	margin-right: 114px;
+	left:2px;
+}
+.section--school_time .bar_2{
+	width:570px;
+	right:-1px
+}
+.section--school_time .bar_3{
+	width:59px;
+	margin-right: 114px;
+	left:2px;
+}
+.section--school_time .bar_4{
+	width:540px;
+	right:-2px
+}
+/*-----------------------------------------------*/
+/*	section--page_nomber
+/*-----------------------------------------------*/
+.section--page_nomber .page{
+    display: inline-block;
+	margin: 18px 0 30px 0;
+}
+.section--page_nomber .main_contnet_list,
+.section--page_nomber .main_contnet_list.foot {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	margin-top: -8px;
+}
+.section--page_nomber .main_contnet_list{
+	border-top: 1px solid #CCCCCC;
+}
+.section--page_nomber .main_contnet_list.foot {
+    border:none;
+}
+.section--page_nomber .this_page {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 40px 608px 20px 0;
+}
+.section--page_nomber .next_page, 
+.section--page_nomber .page_nomber, 
+.section--page_nomber .page_nomber.now {
+	display: block;
+	height: 26px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	color: #999999;
+	border: 1px solid #999999;
+}
+.section--page_nomber .page ul {
+	display: block;
+	margin-top: 14px;
+}
+.section--page_nomber .page ul li {
+	display: inline-block;
+	margin:0 5px 0 0;
+}
+.section--page_nomber .page_nomber, 
+.section--page_nomber .page_nomber.now {
+	width: 40px;
+	padding-top: 5px;
+}
+.section--page_nomber .page_nomber.now {
+	color: #ffffff;
+	background-color: #999999;
+}
+.section--page_nomber .next_page {
+	width: 28px;
+	padding-top: 4px;
+}
+
+/*-----------------------------------------------*/
+/*	section--teacher_tab_area
+/*-----------------------------------------------*/
+.section--teacher_tab_area .top_tab_area {
+	display: block;
+	width: 850px;
+	margin-left: auto;
+	margin-top: 40px;
+}
+.section--teacher_tab_area .tab_inner {
+	display: block;
+	width: 850px;
+	height: 140px;
+	font-size:14px;
+	margin: 1px 0 40px 0;
+	line-height: 1.45;
+	border: 1px solid #CCCCCC;
+    position: relative;
+	top: -1px;
+    z-index: 0;
+}
+
+/*///// ChangeTab_START /////*/
+.section--teacher_tab_area .tab_massage_list{
+    display: block;
+	cursor:pointer;
+}
+.section--teacher_tab_area .tab_massage_list li.on {
+	color: #333333;
+	background-color: #FFFFFF;
+	position:relative;
+	top: 1px;
+	z-index: 5;
+}
+.section--teacher_tab_area .tab_massage_list li{
+	display: inline-block;
+	width: 200px;
+	height: 35px;
+	margin-right:10px;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background-color:#f4f3f3;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 14px;
+	position: relative;   
+	top: 1;
+	z-index: 1;
+}
+/*///// ChangeTab_END /////*/
+
+/*///// Tab_Inner_Change_START /////*/
+
+.section--teacher_tab_area #tabtext_4 p, 
+.section--teacher_tab_area #tabtext_5 p {
+    width: 850px;
+	padding: 25px 20px;
+}
+.section--teacher_tab_area #tab_massage_1,
+.section--teacher_tab_area #tab_massage_2{
+	font-size:14px;
+    width: 850px;
+	padding: 25px 20px;
+}
+/*///// Tab_Inner_Change_END /////*/
+
+/*-----------------------------------------------*/
+/*	section--your_teacher
+/*-----------------------------------------------*/
+.section--your_teacher .help_online_english, 
+.section--your_teacher .school_online_english {
+	text-align: center;
+	width: 100%;
+	color: #333333;
+	font-size: 25px;
+	font-weight: bold;
+}
+.section--your_teacher .help_online_english {
+	margin: 70px 0 19px 0;
+}
+.section--your_teacher .school_online_english {
+	margin: 53px 0 25px 0;
+}
+.section--your_teacher .comment_wrap {
+	width: 1018px;
+}
+.section--your_teacher .english_your_teacher .comment {
+	width: 685px;
+	font-size: 13.5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.8;
+	margin-bottom: 46px;
+}
+.section--your_teacher .online_english {
+	display: table;
+	width: 100%;
+	height: 410px;
+	background-color: #f4f3f3;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 50px;
+}
+.section--your_teacher .online_english_inner {
+	width: 904px;
+	height: 309px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section--your_teacher .photo {
+	background-image:url(../image/other/01.png);
+	background-repeat: no-repeat;
+	display: table-cell;
+	vertical-align: top;
+}
+.section--your_teacher .online_english_inner .comment {
+	display: table-cell;
+	width: 616px;
+	height: 218px;
+	letter-spacing: -0.03em;
+	vertical-align: top;
+	padding-left: 30px;
+	font-size: 13.5px;
+	line-height: 1.9;
+}
+/*-----------------------------------------------*/
+/*	section--banner_area
+/*-----------------------------------------------*/
+.section--banner_area .banner_area, 
+.section--banner_area .banner_area.non_footer {
+	width: 810px;
+	height: 380px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+.section--banner_area .banner_line {
+	padding-top: 50px;
+	margin-top: 63px;
+	border-top: 1px solid #CCCCCC;
+	width: 100%;
+}
+.section--banner_area .banner ul {
+	width: 1024px;
+	margin:0 auto;
+	text-align: left;
+}
+.section--banner_area .banner ul li {
+	display: inline-block;
+	margin-bottom:10px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.section--banner_area .banner_list {
+	width: 250px;
+	height: 80px;
+	margin-right: 30px;
+}
+/*-----------------------------------------------*/
+/*	section--footer_area
+/*-----------------------------------------------*/
+.section--footer_area .footer {
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+	width: 100%;
+	height: 30px;
+	background: #333333;
+	padding: 10px 0;
+	bottom: 0px;
+}
+

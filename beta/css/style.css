@@ -1,0 +1,73 @@
+.main-bg { 
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}  
+
+.restriction-background {
+    background: url('../images/restricted.jpg') no-repeat center center fixed; 
+}
+
+.wrapper {
+	padding: 2%;
+	background: #fff;
+	margin-bottom: 2%;
+}
+
+.login-wrapper {
+	margin: 0 auto;
+	margin-top: 2%;
+	max-width: 30%;
+	padding: 2%;
+	background: #fff;
+}
+
+@media(min-width: 320px;){
+	.login-wrapper {
+		max-width: 90%;
+	}
+}
+
+.login-logo {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.required {
+	color: red;
+}
+
+.success {
+	color: green;
+}
+
+.center-align {
+	margin: 0 auto;
+}
+
+.list-seminar ul li{
+	margin-left: 30px;
+	float: right;
+	font-style: italic;
+	color: gray;
+	font-size: 14px;
+}
+
+.restriction {
+	margin-top: 20px;
+}
+
+.img-main {
+	width: 500px; 
+}
+
+footer {
+	background-color: #7c93b7; 
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+}

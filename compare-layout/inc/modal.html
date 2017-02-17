@@ -1,0 +1,87 @@
+
+<section class="section--review_modal">
+	<div class="review_area m_b_30"> <span><a class="review_btn foot" href="#modal_1" rel="leanModal">レビューを書く</a></span></div>
+	<!--review_modal_step1-->
+	<div id="modal_1">
+		<div class="modal_review_wrap">
+			<div class="modal_review">
+				<h3>レビューを書く</h3>
+				<ul class="review_ttl">
+					<li class="name">ニックネーム</li>
+					<li class="evaluation">評価</li>
+					<li class="comment">コメント</li>
+				</ul>
+				<ul class="input_review">
+					<li class="input_name"><span>※全角10文字以内</span><br>
+						<form id="name_must">
+							<input id="name" class="validate[required],maxSize[10]" type="text" data-prompt-position="topLeft:200">
+						</form>
+					</li>
+					<li class="select_evaluation"><span>※選択してください</span><br>
+						<select id="select_star" class="validate[required]">
+							<option class="star">---------</option>
+							<option class="star">5.0 ★★★★★</option>
+							<option class="star">4.0 ★★★★☆</option>
+							<option class="star">3.0 ★★★☆☆</option>
+							<option class="star">2.0 ★★☆☆☆</option>
+							<option class="star">1.0 ★☆☆☆☆</option>
+						</select>
+					</li>
+					<li class="input_comment"><span>※全角128文字以内</span><br>
+						<form id="comment">
+							<textarea class="validate[nonComment],maxSize[128]" id="input_comment_inner" name="" rows="" cols="" data-prompt-position="topLeft:200">コメントを入力してください</textarea>
+						</form>
+					</li>
+				</ul>
+				<div class="botton_area_1"> <span class="cansel_btn"><a href="#">キャンセル</a></span><span class="send_btn"><a href="#modal_2" rel="leanModal">確認</a></span> </div>
+				<p class="attention">※一度ご登録されたコメントは修正ができませんのでご注意ください。<br>
+					※講師への誹謗中傷などはご遠慮ください。当サイトで削除させていただく場合がございます。</p>
+			</div>
+		</div>
+	</div>
+	<!--/review_modal_step1--> 
+	<!--review_modal_step2-->
+	<div id="modal_2">
+		<div class="modal_review_wrap">
+			<div class="modal_review">
+				<h3>レビューを書く</h3>
+				<p class="review_confirmation">以下の内容で間違いがなければ「投稿する」を押してください。</p>
+				<p class="attention">反映には、しばらく時間がかかる場合がございます。</p>
+				<ul class="review_ttl">
+					<li class="name_area">ニックネーム</li>
+					<li class="evaluation_area">評価</li>
+					<li class="comment_area">コメント</li>
+				</ul>
+				<div class="input_review_confirmation">
+					<ul>
+						<li><span class="user_name">英会話太郎</span><br>
+						</li>
+						<li class="select_confirmation"><span class="number">5.0:</span><span class="star">★★★★★</span></li>
+						<li class="comment_confirmation">
+							<p class="user_sentence">はじめてでとても緊張しましたが、先生がとても丁寧に教えてくださったので、安心してレッスンをすることができました。笑顔が素敵な方だったので、またレッスンを受けてみたいと思います。趣味が旅行らしいので、次回はそのあたりについて話してみたいと思います。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="botton_area_2">
+					<div class="btton_area_inner"><span class="return_btn"><a href="#modal_1" rel="leanModal">戻る</a></span> <span class="send_btn"><a href="#modal_3" rel="leanModal">投稿する</a></span></div>
+				</div>
+				<p class="attention">※一度ご登録されたコメントは修正ができませんのでご注意ください。<br>
+					※講師への誹謗中傷などはご遠慮ください。当サイトで削除させていただく場合がございます。</p>
+			</div>
+		</div>
+	</div>
+	<!--review_modal_step_last-->
+	<div id="modal_3">
+		<div class="modal_review_wrap">
+			<div class="modal_review">
+				<h3>レビュー送信完了</h3>
+				<p class="review_finish">レビューを投稿しました！</p>
+				<p class="attention">反映には、しばらく時間がかかる場合がございます。<br>
+					※一度ご登録されたコメントは修正ができませんのでご注意ください。<br>
+					※講師への誹謗中傷などはご遠慮ください。当サイトで削除させていただく場合がございます。</p>
+				<div class="botton_area_1"> <span class="cansel_btn close"><a href="#">閉じる</a></span></div>
+			</div>
+		</div>
+	</div>
+	<!--/review_modal_step_last--> 
+</section>

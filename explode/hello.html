@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $.get("banner.html", function (data) {
+                    $("#appendToThis").append(data);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="appendToThis">
+			
+		</div>
+    </body>
+</html>
