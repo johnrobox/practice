@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	<style>
+			.container{
+				background-color:blue;
+				height: 200px;
+			}
+	</style>
+	<body>
+
+<button id="showText">Click me to show text</button>
+<p class="text">Lorem ipsum dolor sit amet, est at quod mnesarchum. Nec ocurreret disputationi et. Per viderer labitur tacimates at, quo appareat explicari te. Nec discere appetere interesset an, augue salutatus ex has. Omnes gloriatur philosophia ius at, an per stet tota forensibus. Vel option fuisset ei, ne his cibo democritum, vix primis melius definitiones id.
+</p>
+<button id="hideText">Click me to hide text</button>
+
+			<!-- <div class="container">
+			</div> -->
+
+
+    <script>
+var counter = 1;
+
+$(document).ready(function(){
+	    $("#showText").hide();
+		if(counter==1){
+			$("#hideText").click(function(){
+				$(".text").hide();
+				$("#hideText").hide();
+				$("#showText").show();
+				counter++;
+			})
+			
+		}else{	
+			$("#showText").click(function(){
+				$(".text").show();
+				$("#hideText").show();
+				$("#showText").hide();
+				counter = 1;
+			})
+			
+		}
+})
+
+     /*var counter = 1;
+    		$(document).ready(
+    			function(){
+    				$(".container").click(function(){welcome(this)})
+    				setInterval(function(){
+    					console.log('hello');
+    					if(counter==1){
+    					      $(".container").css({"background-color":"red"});
+    					      counter++;
+		    		    }else{
+		    		    	   $(".container").css({"background-color":"blue"});
+		    		    	   counter=1;
+		    		    }
+    		    
+    				},1000);
+    			}
+    			);
+
+    		function welcome(message){
+    			if(counter==1){
+    					$(message).css({"background-color":"red"});
+    					counter++;
+    		    }else{
+    		    	   $(message).css({"background-color":"blue"});
+    		    	   counter=1;
+    		    }
+    		    
+    		}*/
+    </script>
+
+
+	
+
+
+
+
+
+	</body>
+
+</html>
